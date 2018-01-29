@@ -1,4 +1,5 @@
 <?php
+  session_destroy();
 	session_start();
 	if(isset($_SESSION["session_username"])){
 		header("Location: inicio.php");
@@ -91,7 +92,7 @@
             <br />
             <p>Hola! A que esperas si ya tienes una cuenta, inicia sesion y entra a las opciones de usuarios.</p>
             <br />
-            <div style="margin-left: 25%;">
+            <div style="margin-left: 25%; color: white;">
                 <form method="post">
                    <table>
                        <tr>
@@ -108,7 +109,6 @@
                    </table>
                 </form>
             </div>
-            
           </div>
         </div>
       </div>
