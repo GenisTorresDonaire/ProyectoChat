@@ -46,7 +46,10 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
             </li>
-            <li class="nav-item" style="margin-left: 50px;">
+            <li class="nav-item" style="margin-left: 80px;">
+              <a class="nav-link fa fa-user-circle-o" style="transform: scale(2.0);" href="editarDatos.php"></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link fa fa-sign-out" style="transform: scale(2.0);" href="logout.php"></a>
             </li>
           </ul>  
@@ -55,99 +58,187 @@
     </nav>
 
 
-    <section>
-        <div class="container" style="padding-top: 30px;">
-            <div class="row form-group" style="border: 2px solid grey; text-align: left;">
-                <div class="" style="margin-left: 15%;">
-                    <div class="panel panel-primary">
-                        <div class="panel-body body-panel">
-                            <ul class="chat">
-                                <li class="left clearfix"><span class="chat-img pull-left">
-                                    <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
-                                </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong> 
-                                            <small class="pull-right text-muted">12 mins ago</small>
+    <section>  
+        <div class="card grey lighten-3 chat-room">
+            <div class="card-body">
+                <div class="row px-lg-2 px-2">
+                    <div class="col-md-6 col-xl-4 px-0">
+                        <h6 class="font-bold mb-3 text-center text-lg-left">Miembros</h6>
+                        <div class="white z-depth-1 px-3 pt-3 pb-0">
+                            <ul class="list-unstyled friend-list">
+                                <li class="active grey lighten-3 p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>John Doe</strong>
+                                            <p class="last-message text-muted">Hello, Are you there?</p>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
-                                    </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">Just now</p>
+                                            <span class="badge badge-danger float-right">1</span>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li class="right"><span class="chat-img pull-right"><img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" /></span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">13 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Danny Smith</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                            dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">5 min ago</p>
+                                            <span class="text-muted float-right"><i class="fa fa-mail-reply" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li class="left"><span class="chat-img pull-left">
-                                    <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" /></span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong><small class="pull-right text-muted">14 mins ago</small>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Alex Steward</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                            dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">Yesterday</p>
+                                            <span class="text-muted float-right"><i class="fa fa-mail-reply" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li class="right"><span class="chat-img pull-right">
-                                    <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
-                                </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-3" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Ashley Olsen</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                            dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">Yesterday</p>
+                                            <span class="text-muted float-right"><i class="fa fa-mail-reply" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Kate Moss</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
+                                        </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">Yesterday</p>
+                                            <span class="text-muted float-right"><i class="fa fa-mail-reply" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Lara Croft</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
+                                        </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">Yesterday</p>
+                                            <span class="text-muted float-right"><i class="fa fa-mail-reply" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-2">
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                                        <div class="text-small">   
+                                            <strong>Brad Pitt</strong>
+                                            <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
+                                        </div>
+                                        <div class="chat-footer">
+                                            <p class="text-smaller text-muted mb-0">5 min ago</p>
+                                            <span class="text-muted float-right"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="panel-footer clearfix">
-                            <textarea class="form-control" rows="3"></textarea>
-                            <span class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-12" style="margin-top: 10px">
-                                <button class="btn btn-warning btn-lg btn-block" id="btn-chat">Send</button>
-                            </span>
+                    </div>
+
+                    <div class="col-md-6 col-xl-8 pl-md-3 px-lg-auto px-0">
+                        <div class="chat-message">
+                            <ul class="list-unstyled chat">
+                                <li class="d-flex justify-content-between mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
+                                    <div class="chat-body white p-3 ml-2 z-depth-1">
+                                        <div class="header">
+                                            <strong class="primary-font">Brad Pitt</strong>
+                                            <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                                        </div>
+                                        <hr class="w-100">
+                                        <p class="mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between mb-4">
+                                    <div class="chat-body white p-3 z-depth-1">
+                                        <div class="header">
+                                            <strong class="primary-font">Lara Croft</strong>
+                                            <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                                        </div>
+                                        <hr class="w-100">
+                                        <p class="mb-0">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                        </p>
+                                    </div>
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5" alt="avatar" class="avatar rounded-circle mr-0 ml-3 z-depth-1">
+                                </li>
+                                <li class="d-flex justify-content-between mb-4 pb-3">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
+                                    <div class="chat-body white p-3 ml-2 z-depth-1">
+                                        <div class="header">
+                                            <strong class="primary-font">Brad Pitt</strong>
+                                            <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                                        </div>
+                                        <hr class="w-100">
+                                        <p class="mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="white">
+                                    <div class="form-group basic-textarea">
+                                        <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
+                                    </div>
+                                </li>
+                                <button type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-   
-    <section id="contact" style="background-color: #9C9C9C; color: black;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Contacta con el Ayuntamiento</h2>
-            <br>
-            <p class="mb-5">El Ayuntamiento ofrece diferentes líneas on-line para atender cualquier petición informativa o trámite.</p>
+        </div>      
+        </section>
+       
+        <section id="contact" style="background-color: #9C9C9C; color: black;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Contacta con el Ayuntamiento</h2>
+                <br>
+                <p class="mb-5">El Ayuntamiento ofrece diferentes líneas on-line para atender cualquier petición informativa o trámite.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 ml-auto text-center">
+                <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                <p>932-393-432</p>
+              </div>
+              <div class="col-lg-4 mr-auto text-center">
+                <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                <p>
+                  <p>informacio@aj-cornella.cat</p>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>932-393-432</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <p>informacio@aj-cornella.cat</p>
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Bootstrap core JavaScript -->

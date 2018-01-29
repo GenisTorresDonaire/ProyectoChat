@@ -44,7 +44,10 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
             </li>
-            <li class="nav-item" style="margin-left: 50px;">
+            <li class="nav-item" style="margin-left: 80px;">
+              <a class="nav-link fa fa-user-circle-o" style="transform: scale(2.0);" href="editarDatos.php"></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link fa fa-sign-out" style="transform: scale(2.0);" href="logout.php"></a>
             </li>
           </ul>
